@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dc8d955324f7478595a1dce20235ab43 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_dc8d955324f7478595a1dce20235ab43" ></div>
+        
+</body>
+<script>    
+    
+            var map_dc8d955324f7478595a1dce20235ab43 = L.map(
+                "map_dc8d955324f7478595a1dce20235ab43",
+                {
+                    center: [24.144144, 120.679654],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5260329a153f47dcad462592d9a74569 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var marker_3b80ded02d9644b1b4a66111feb67afa = L.marker(
+                [24.164664, 120.643224],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_b2714b233c7047fb831366a7867f73e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3b80ded02d9644b1b4a66111feb67afa.setIcon(icon_b2714b233c7047fb831366a7867f73e9);
+        
+    
+        var popup_82e89e4ed39d48a0b187ec332c0ebc3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fed23c0f2e9540a1adc118942c1c1740 = $(`<div id="html_fed23c0f2e9540a1adc118942c1c1740" style="width: 100.0%; height: 100.0%;">_2021/07/07_有確診者足跡</div>`)[0];
+            popup_82e89e4ed39d48a0b187ec332c0ebc3e.setContent(html_fed23c0f2e9540a1adc118942c1c1740);
+        
+
+        marker_3b80ded02d9644b1b4a66111feb67afa.bindPopup(popup_82e89e4ed39d48a0b187ec332c0ebc3e)
+        ;
+
+        
+    
+    
+            var marker_6c2fb41ab1e8449c937eaeec1b850d47 = L.marker(
+                [24.164664, 120.643224],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_ebeba93f2d7a4aa9b248c9ef5ceaa9b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6c2fb41ab1e8449c937eaeec1b850d47.setIcon(icon_ebeba93f2d7a4aa9b248c9ef5ceaa9b0);
+        
+    
+        var popup_0397475a680c4a16a5bb84c4d6a0090e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3c9583b63c2493098f1de62b0c5edc9 = $(`<div id="html_c3c9583b63c2493098f1de62b0c5edc9" style="width: 100.0%; height: 100.0%;">_2021/07/07_有確診者足跡</div>`)[0];
+            popup_0397475a680c4a16a5bb84c4d6a0090e.setContent(html_c3c9583b63c2493098f1de62b0c5edc9);
+        
+
+        marker_6c2fb41ab1e8449c937eaeec1b850d47.bindPopup(popup_0397475a680c4a16a5bb84c4d6a0090e)
+        ;
+
+        
+    
+    
+            var marker_1c883d75c6874b1198d94cddfeee9e7e = L.marker(
+                [24.164664, 120.643224],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_cee85661f67b418292610588bf15135f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1c883d75c6874b1198d94cddfeee9e7e.setIcon(icon_cee85661f67b418292610588bf15135f);
+        
+    
+        var popup_b4ba47ccbd9c420da845108b8b607d4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92dd7dd9a715423abd1203cccd956fb0 = $(`<div id="html_92dd7dd9a715423abd1203cccd956fb0" style="width: 100.0%; height: 100.0%;">_2021/07/07_有確診者足跡</div>`)[0];
+            popup_b4ba47ccbd9c420da845108b8b607d4b.setContent(html_92dd7dd9a715423abd1203cccd956fb0);
+        
+
+        marker_1c883d75c6874b1198d94cddfeee9e7e.bindPopup(popup_b4ba47ccbd9c420da845108b8b607d4b)
+        ;
+
+        
+    
+    
+            var marker_e85507cc46b248929249a29e83515436 = L.marker(
+                [24.164664, 120.643224],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_695e1409708e4606b62c2174c22af7e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e85507cc46b248929249a29e83515436.setIcon(icon_695e1409708e4606b62c2174c22af7e5);
+        
+    
+        var popup_ffb7e7cb28af424dbe2fcad45b64fd48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50bc007bcffa42b1ae69d1ae1e513a5a = $(`<div id="html_50bc007bcffa42b1ae69d1ae1e513a5a" style="width: 100.0%; height: 100.0%;">_2021/07/07_有確診者足跡</div>`)[0];
+            popup_ffb7e7cb28af424dbe2fcad45b64fd48.setContent(html_50bc007bcffa42b1ae69d1ae1e513a5a);
+        
+
+        marker_e85507cc46b248929249a29e83515436.bindPopup(popup_ffb7e7cb28af424dbe2fcad45b64fd48)
+        ;
+
+        
+    
+    
+            var marker_5a8eabef68db4410a713a86aefc9fbf9 = L.marker(
+                [24.138509, 120.680392],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_0516d070a2ff4cc192fa2bce5961bac2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5a8eabef68db4410a713a86aefc9fbf9.setIcon(icon_0516d070a2ff4cc192fa2bce5961bac2);
+        
+    
+        var popup_3ba9998ae96b45fba0056b71cf8d31c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79e51e970f544bf0a7e867e5f3914950 = $(`<div id="html_79e51e970f544bf0a7e867e5f3914950" style="width: 100.0%; height: 100.0%;">_2021/07/02_有確診者足跡</div>`)[0];
+            popup_3ba9998ae96b45fba0056b71cf8d31c6.setContent(html_79e51e970f544bf0a7e867e5f3914950);
+        
+
+        marker_5a8eabef68db4410a713a86aefc9fbf9.bindPopup(popup_3ba9998ae96b45fba0056b71cf8d31c6)
+        ;
+
+        
+    
+    
+            var marker_8aa1c1cba7d64392a0358e4ed32082f0 = L.marker(
+                [24.138509, 120.680392],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_a7f2b69a52a4422a99803d018e831414 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8aa1c1cba7d64392a0358e4ed32082f0.setIcon(icon_a7f2b69a52a4422a99803d018e831414);
+        
+    
+        var popup_fb9c33217b9b4637a1dd4998c2f0a2d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07a97f4d6c73401b9e9404aeaf23ae77 = $(`<div id="html_07a97f4d6c73401b9e9404aeaf23ae77" style="width: 100.0%; height: 100.0%;">_2021/07/03_有確診者足跡</div>`)[0];
+            popup_fb9c33217b9b4637a1dd4998c2f0a2d7.setContent(html_07a97f4d6c73401b9e9404aeaf23ae77);
+        
+
+        marker_8aa1c1cba7d64392a0358e4ed32082f0.bindPopup(popup_fb9c33217b9b4637a1dd4998c2f0a2d7)
+        ;
+
+        
+    
+    
+            var marker_fb64a6289c374aeda18a3691846793ae = L.marker(
+                [24.138509, 120.680392],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_27e10b26a33646129cbb1579e7d01306 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fb64a6289c374aeda18a3691846793ae.setIcon(icon_27e10b26a33646129cbb1579e7d01306);
+        
+    
+        var popup_1856884f0a554b8fa53bf71f64ffb82c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86fb1197b47a44c08bf94bfefc242f06 = $(`<div id="html_86fb1197b47a44c08bf94bfefc242f06" style="width: 100.0%; height: 100.0%;">_2021/07/04_有確診者足跡</div>`)[0];
+            popup_1856884f0a554b8fa53bf71f64ffb82c.setContent(html_86fb1197b47a44c08bf94bfefc242f06);
+        
+
+        marker_fb64a6289c374aeda18a3691846793ae.bindPopup(popup_1856884f0a554b8fa53bf71f64ffb82c)
+        ;
+
+        
+    
+    
+            var marker_ddc266341ee6495b8ea1fd246c995bd9 = L.marker(
+                [24.138509, 120.680392],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_56d6e0550cea4969b9114122d059a917 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ddc266341ee6495b8ea1fd246c995bd9.setIcon(icon_56d6e0550cea4969b9114122d059a917);
+        
+    
+        var popup_0e5be27cd072481692fad71fb5356604 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ce69fc762564fd3beb0a18d5ea7eb98 = $(`<div id="html_6ce69fc762564fd3beb0a18d5ea7eb98" style="width: 100.0%; height: 100.0%;">_2021/07/05_有確診者足跡</div>`)[0];
+            popup_0e5be27cd072481692fad71fb5356604.setContent(html_6ce69fc762564fd3beb0a18d5ea7eb98);
+        
+
+        marker_ddc266341ee6495b8ea1fd246c995bd9.bindPopup(popup_0e5be27cd072481692fad71fb5356604)
+        ;
+
+        
+    
+    
+            var marker_45a4be79b3804cf7a7009cf6200a8f38 = L.marker(
+                [24.138509, 120.680392],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_b3cd15f773044307aef99bf4eb1d4b76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_45a4be79b3804cf7a7009cf6200a8f38.setIcon(icon_b3cd15f773044307aef99bf4eb1d4b76);
+        
+    
+        var popup_18ce887a0cc64d6cb9d7b2de4056c617 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_693716888db14104bdf85f46f5ec2f1c = $(`<div id="html_693716888db14104bdf85f46f5ec2f1c" style="width: 100.0%; height: 100.0%;">_2021/07/06_有確診者足跡</div>`)[0];
+            popup_18ce887a0cc64d6cb9d7b2de4056c617.setContent(html_693716888db14104bdf85f46f5ec2f1c);
+        
+
+        marker_45a4be79b3804cf7a7009cf6200a8f38.bindPopup(popup_18ce887a0cc64d6cb9d7b2de4056c617)
+        ;
+
+        
+    
+    
+            var marker_8bf2fafb5b964710b166370ff5e94fb7 = L.marker(
+                [24.138509, 120.680392],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_a46de1aaef6d47b3b38b88fc550c2523 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8bf2fafb5b964710b166370ff5e94fb7.setIcon(icon_a46de1aaef6d47b3b38b88fc550c2523);
+        
+    
+        var popup_f61bd684f0ed4174b4144aa58ba274fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20989703c18e42f89df5d1b24a6637cd = $(`<div id="html_20989703c18e42f89df5d1b24a6637cd" style="width: 100.0%; height: 100.0%;">_2021/07/07_有確診者足跡</div>`)[0];
+            popup_f61bd684f0ed4174b4144aa58ba274fc.setContent(html_20989703c18e42f89df5d1b24a6637cd);
+        
+
+        marker_8bf2fafb5b964710b166370ff5e94fb7.bindPopup(popup_f61bd684f0ed4174b4144aa58ba274fc)
+        ;
+
+        
+    
+    
+            var marker_c8857bdcb7004f3782e2e54ac8ce4572 = L.marker(
+                [24.138509, 120.680392],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_cf0411349df54a92bb1cf69d503e3ea0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c8857bdcb7004f3782e2e54ac8ce4572.setIcon(icon_cf0411349df54a92bb1cf69d503e3ea0);
+        
+    
+        var popup_46777d57b9d44029a81ebfb4cb06ee10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e57c886cd9ba459eaa28b587faffd394 = $(`<div id="html_e57c886cd9ba459eaa28b587faffd394" style="width: 100.0%; height: 100.0%;">_2021/07/08_有確診者足跡</div>`)[0];
+            popup_46777d57b9d44029a81ebfb4cb06ee10.setContent(html_e57c886cd9ba459eaa28b587faffd394);
+        
+
+        marker_c8857bdcb7004f3782e2e54ac8ce4572.bindPopup(popup_46777d57b9d44029a81ebfb4cb06ee10)
+        ;
+
+        
+    
+    
+            var marker_257bb7976aba4034a5abf385efdac2ae = L.marker(
+                [24.138509, 120.680392],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_9fb7e6eb913f4164b49aba897e0e5a25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_257bb7976aba4034a5abf385efdac2ae.setIcon(icon_9fb7e6eb913f4164b49aba897e0e5a25);
+        
+    
+        var popup_89fa08fd3ad5462986c08d7d58b0d4ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26c181e891ac4b93b6e3df80d319611e = $(`<div id="html_26c181e891ac4b93b6e3df80d319611e" style="width: 100.0%; height: 100.0%;">_2021/07/09_有確診者足跡</div>`)[0];
+            popup_89fa08fd3ad5462986c08d7d58b0d4ca.setContent(html_26c181e891ac4b93b6e3df80d319611e);
+        
+
+        marker_257bb7976aba4034a5abf385efdac2ae.bindPopup(popup_89fa08fd3ad5462986c08d7d58b0d4ca)
+        ;
+
+        
+    
+    
+            var marker_ce9136e2c4634704b68eb924b135f8e9 = L.marker(
+                [24.137985, 120.679634],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_c5e6b8fcd29e4a61b6c401f2d4f436ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ce9136e2c4634704b68eb924b135f8e9.setIcon(icon_c5e6b8fcd29e4a61b6c401f2d4f436ba);
+        
+    
+        var popup_f48dddf615924df3bca790b417ce40e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5155df4a317c407383f6dfa1f9110203 = $(`<div id="html_5155df4a317c407383f6dfa1f9110203" style="width: 100.0%; height: 100.0%;">_2021/07/02_有確診者足跡</div>`)[0];
+            popup_f48dddf615924df3bca790b417ce40e4.setContent(html_5155df4a317c407383f6dfa1f9110203);
+        
+
+        marker_ce9136e2c4634704b68eb924b135f8e9.bindPopup(popup_f48dddf615924df3bca790b417ce40e4)
+        ;
+
+        
+    
+    
+            var marker_fad0efa3910e4b2b954858b45cf359fd = L.marker(
+                [24.137985, 120.679634],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_9e871877681e48e9a3df287cfc8bde06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fad0efa3910e4b2b954858b45cf359fd.setIcon(icon_9e871877681e48e9a3df287cfc8bde06);
+        
+    
+        var popup_dac6a7e35a45483da4919b1118306a62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff1ed480c4d040148febed0351ef0ffd = $(`<div id="html_ff1ed480c4d040148febed0351ef0ffd" style="width: 100.0%; height: 100.0%;">_2021/07/03_有確診者足跡</div>`)[0];
+            popup_dac6a7e35a45483da4919b1118306a62.setContent(html_ff1ed480c4d040148febed0351ef0ffd);
+        
+
+        marker_fad0efa3910e4b2b954858b45cf359fd.bindPopup(popup_dac6a7e35a45483da4919b1118306a62)
+        ;
+
+        
+    
+    
+            var marker_8eaaf18d03c84b55ba8941781aeba3b2 = L.marker(
+                [24.137985, 120.679634],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_c28c1d0415d64833aea2d9c61468e9b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8eaaf18d03c84b55ba8941781aeba3b2.setIcon(icon_c28c1d0415d64833aea2d9c61468e9b9);
+        
+    
+        var popup_0fb15760de5a4665981a1ff807f88696 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93d44a1d956b4f57a39e10554eecf7f3 = $(`<div id="html_93d44a1d956b4f57a39e10554eecf7f3" style="width: 100.0%; height: 100.0%;">_2021/07/06_有確診者足跡</div>`)[0];
+            popup_0fb15760de5a4665981a1ff807f88696.setContent(html_93d44a1d956b4f57a39e10554eecf7f3);
+        
+
+        marker_8eaaf18d03c84b55ba8941781aeba3b2.bindPopup(popup_0fb15760de5a4665981a1ff807f88696)
+        ;
+
+        
+    
+    
+            var marker_eb7ece1816be4a40ab701b275067f656 = L.marker(
+                [24.137985, 120.679634],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_ba4d9d329fe142a899225a3d9c7f9bc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_eb7ece1816be4a40ab701b275067f656.setIcon(icon_ba4d9d329fe142a899225a3d9c7f9bc5);
+        
+    
+        var popup_3e408ef7a19d4984b2e61993f6529e04 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_acf129f3da4649d7b0c9412d38986cfb = $(`<div id="html_acf129f3da4649d7b0c9412d38986cfb" style="width: 100.0%; height: 100.0%;">_2021/07/07_有確診者足跡</div>`)[0];
+            popup_3e408ef7a19d4984b2e61993f6529e04.setContent(html_acf129f3da4649d7b0c9412d38986cfb);
+        
+
+        marker_eb7ece1816be4a40ab701b275067f656.bindPopup(popup_3e408ef7a19d4984b2e61993f6529e04)
+        ;
+
+        
+    
+    
+            var marker_4896a678b93b4899a9e27eae1a2c0eb3 = L.marker(
+                [24.148631, 120.683465],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_fcba2cbb1b6e4dec9279ab3b2a9f0d10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4896a678b93b4899a9e27eae1a2c0eb3.setIcon(icon_fcba2cbb1b6e4dec9279ab3b2a9f0d10);
+        
+    
+        var popup_1028f179280641f98036b5599fd5ce9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ff70366568548829964a8a727f21f1f = $(`<div id="html_5ff70366568548829964a8a727f21f1f" style="width: 100.0%; height: 100.0%;">_2021/07/04_有確診者足跡</div>`)[0];
+            popup_1028f179280641f98036b5599fd5ce9d.setContent(html_5ff70366568548829964a8a727f21f1f);
+        
+
+        marker_4896a678b93b4899a9e27eae1a2c0eb3.bindPopup(popup_1028f179280641f98036b5599fd5ce9d)
+        ;
+
+        
+    
+    
+            var marker_fd52efaa416846c89629106c80b1ccd6 = L.marker(
+                [24.152211, 120.6847868],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_10b2095063c44acb990f8d9e3a07cbb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fd52efaa416846c89629106c80b1ccd6.setIcon(icon_10b2095063c44acb990f8d9e3a07cbb0);
+        
+    
+        var popup_e36668e5c201409cb07f81930386aa7e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_161642eefcdb4dffb94f4795d8cb8fd9 = $(`<div id="html_161642eefcdb4dffb94f4795d8cb8fd9" style="width: 100.0%; height: 100.0%;">_2021/07/04_有確診者足跡</div>`)[0];
+            popup_e36668e5c201409cb07f81930386aa7e.setContent(html_161642eefcdb4dffb94f4795d8cb8fd9);
+        
+
+        marker_fd52efaa416846c89629106c80b1ccd6.bindPopup(popup_e36668e5c201409cb07f81930386aa7e)
+        ;
+
+        
+    
+    
+            var marker_2f47be8665164d149dc4418927182f28 = L.marker(
+                [24.148631, 120.683465],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_978727871357459e92572efa924fd8d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2f47be8665164d149dc4418927182f28.setIcon(icon_978727871357459e92572efa924fd8d4);
+        
+    
+        var popup_4e42aed9380c4a7e81c4226695a6cf7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b515a235b904d90bebbcba0cf958364 = $(`<div id="html_1b515a235b904d90bebbcba0cf958364" style="width: 100.0%; height: 100.0%;">_2021/07/04_有確診者足跡</div>`)[0];
+            popup_4e42aed9380c4a7e81c4226695a6cf7f.setContent(html_1b515a235b904d90bebbcba0cf958364);
+        
+
+        marker_2f47be8665164d149dc4418927182f28.bindPopup(popup_4e42aed9380c4a7e81c4226695a6cf7f)
+        ;
+
+        
+    
+    
+            var marker_1ada670cb5324f4e8fb5398b60e02fad = L.marker(
+                [24.144837, 120.714033],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_b1f6199dfe5345358822628881edbdc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1ada670cb5324f4e8fb5398b60e02fad.setIcon(icon_b1f6199dfe5345358822628881edbdc6);
+        
+    
+        var popup_845ece85c79e4ff9a43398ce187b2749 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46fe85360d144dae87c0ce2e30695569 = $(`<div id="html_46fe85360d144dae87c0ce2e30695569" style="width: 100.0%; height: 100.0%;">_2021/07/02_有確診者足跡</div>`)[0];
+            popup_845ece85c79e4ff9a43398ce187b2749.setContent(html_46fe85360d144dae87c0ce2e30695569);
+        
+
+        marker_1ada670cb5324f4e8fb5398b60e02fad.bindPopup(popup_845ece85c79e4ff9a43398ce187b2749)
+        ;
+
+        
+    
+    
+            var marker_98a8448ab49940468b43ae0de2dcdb82 = L.marker(
+                [24.226664, 120.803284],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_17a6614eb8e94128a6b1e62af968d346 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_98a8448ab49940468b43ae0de2dcdb82.setIcon(icon_17a6614eb8e94128a6b1e62af968d346);
+        
+    
+        var popup_f7bbb3a733d6434b838f5513b959083c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f937b86817b64520a52b8ab52248e67c = $(`<div id="html_f937b86817b64520a52b8ab52248e67c" style="width: 100.0%; height: 100.0%;">_2021/07/02_有確診者足跡</div>`)[0];
+            popup_f7bbb3a733d6434b838f5513b959083c.setContent(html_f937b86817b64520a52b8ab52248e67c);
+        
+
+        marker_98a8448ab49940468b43ae0de2dcdb82.bindPopup(popup_f7bbb3a733d6434b838f5513b959083c)
+        ;
+
+        
+    
+    
+            var marker_800a3bf3ceaa41da920cad1cbb970601 = L.marker(
+                [24.144837, 120.714033],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_94c2cc1c0ed0460687f3a7a5163629e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_800a3bf3ceaa41da920cad1cbb970601.setIcon(icon_94c2cc1c0ed0460687f3a7a5163629e1);
+        
+    
+        var popup_5769ee81dd6044cca61ddd54074be40a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9995e891a6b40c482d3970b8e239b6f = $(`<div id="html_b9995e891a6b40c482d3970b8e239b6f" style="width: 100.0%; height: 100.0%;">_2021/07/03_有確診者足跡</div>`)[0];
+            popup_5769ee81dd6044cca61ddd54074be40a.setContent(html_b9995e891a6b40c482d3970b8e239b6f);
+        
+
+        marker_800a3bf3ceaa41da920cad1cbb970601.bindPopup(popup_5769ee81dd6044cca61ddd54074be40a)
+        ;
+
+        
+    
+    
+            var marker_9fa6b40af43e45f2b78e5442ff52a48d = L.marker(
+                [24.226664, 120.803284],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_b2d9fc18801b4ab6a08cafa040b32def = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9fa6b40af43e45f2b78e5442ff52a48d.setIcon(icon_b2d9fc18801b4ab6a08cafa040b32def);
+        
+    
+        var popup_ecbc574b265f43e6982556c2a25f6ecd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dab939b770c240a89ee640dac251ca68 = $(`<div id="html_dab939b770c240a89ee640dac251ca68" style="width: 100.0%; height: 100.0%;">_2021/07/03_有確診者足跡</div>`)[0];
+            popup_ecbc574b265f43e6982556c2a25f6ecd.setContent(html_dab939b770c240a89ee640dac251ca68);
+        
+
+        marker_9fa6b40af43e45f2b78e5442ff52a48d.bindPopup(popup_ecbc574b265f43e6982556c2a25f6ecd)
+        ;
+
+        
+    
+    
+            var marker_0f1e939238574b8d83cccdbcd1fd647e = L.marker(
+                [24.144837, 120.714033],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_5ce28220da094c2e99a180c3fb03c434 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0f1e939238574b8d83cccdbcd1fd647e.setIcon(icon_5ce28220da094c2e99a180c3fb03c434);
+        
+    
+        var popup_886b1e031c564972bea673c746cd47a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_531f0f69af7343eea3d57215ed6439c3 = $(`<div id="html_531f0f69af7343eea3d57215ed6439c3" style="width: 100.0%; height: 100.0%;">_2021/07/04_有確診者足跡</div>`)[0];
+            popup_886b1e031c564972bea673c746cd47a8.setContent(html_531f0f69af7343eea3d57215ed6439c3);
+        
+
+        marker_0f1e939238574b8d83cccdbcd1fd647e.bindPopup(popup_886b1e031c564972bea673c746cd47a8)
+        ;
+
+        
+    
+    
+            var marker_7c2897ba0f424c8e883c3ee34325fba6 = L.marker(
+                [24.226664, 120.803284],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_051bda32142146c2824ca4cffd6864cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7c2897ba0f424c8e883c3ee34325fba6.setIcon(icon_051bda32142146c2824ca4cffd6864cb);
+        
+    
+        var popup_dd17e84fb82b46368ae1247238d37fff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd6022748cfe48f3b26f5ad22f6a2faa = $(`<div id="html_fd6022748cfe48f3b26f5ad22f6a2faa" style="width: 100.0%; height: 100.0%;">_2021/07/04_有確診者足跡</div>`)[0];
+            popup_dd17e84fb82b46368ae1247238d37fff.setContent(html_fd6022748cfe48f3b26f5ad22f6a2faa);
+        
+
+        marker_7c2897ba0f424c8e883c3ee34325fba6.bindPopup(popup_dd17e84fb82b46368ae1247238d37fff)
+        ;
+
+        
+    
+    
+            var marker_bbdaee4cdbde471b8964ad3fee925aea = L.marker(
+                [24.144837, 120.714033],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_815dd31c080d4b24a43d0e3b169d1e13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bbdaee4cdbde471b8964ad3fee925aea.setIcon(icon_815dd31c080d4b24a43d0e3b169d1e13);
+        
+    
+        var popup_c37691bdabd7490381e32c2aa1af3330 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c1f6fe267c3462fb989de63cfd555ca = $(`<div id="html_3c1f6fe267c3462fb989de63cfd555ca" style="width: 100.0%; height: 100.0%;">_2021/07/05_有確診者足跡</div>`)[0];
+            popup_c37691bdabd7490381e32c2aa1af3330.setContent(html_3c1f6fe267c3462fb989de63cfd555ca);
+        
+
+        marker_bbdaee4cdbde471b8964ad3fee925aea.bindPopup(popup_c37691bdabd7490381e32c2aa1af3330)
+        ;
+
+        
+    
+    
+            var marker_28971b708fb94adfa039a6b2fbc68bd3 = L.marker(
+                [24.226664, 120.803284],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_d8fc5d80c7114b749bf3fc8ffa5139c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_28971b708fb94adfa039a6b2fbc68bd3.setIcon(icon_d8fc5d80c7114b749bf3fc8ffa5139c2);
+        
+    
+        var popup_8d9a0446f49844d5afd8bd8332e0288a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52cad31fad1b4affa48d2e54a35bc047 = $(`<div id="html_52cad31fad1b4affa48d2e54a35bc047" style="width: 100.0%; height: 100.0%;">_2021/07/05_有確診者足跡</div>`)[0];
+            popup_8d9a0446f49844d5afd8bd8332e0288a.setContent(html_52cad31fad1b4affa48d2e54a35bc047);
+        
+
+        marker_28971b708fb94adfa039a6b2fbc68bd3.bindPopup(popup_8d9a0446f49844d5afd8bd8332e0288a)
+        ;
+
+        
+    
+    
+            var marker_2777947e265c408e8694065182663f61 = L.marker(
+                [24.144837, 120.714033],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_19ad14b37577450c9606f9686298ca4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2777947e265c408e8694065182663f61.setIcon(icon_19ad14b37577450c9606f9686298ca4a);
+        
+    
+        var popup_e0584ea5e9704d0daa565a8ba7d9d457 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c9c7743569e4b83ab3511a177569d34 = $(`<div id="html_2c9c7743569e4b83ab3511a177569d34" style="width: 100.0%; height: 100.0%;">_2021/07/06_有確診者足跡</div>`)[0];
+            popup_e0584ea5e9704d0daa565a8ba7d9d457.setContent(html_2c9c7743569e4b83ab3511a177569d34);
+        
+
+        marker_2777947e265c408e8694065182663f61.bindPopup(popup_e0584ea5e9704d0daa565a8ba7d9d457)
+        ;
+
+        
+    
+    
+            var marker_c6055a97835a4e5aa37eea365dfd56d1 = L.marker(
+                [24.226664, 120.803284],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_ae5a0b9de57e4ad9a8208a33a6fbba38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c6055a97835a4e5aa37eea365dfd56d1.setIcon(icon_ae5a0b9de57e4ad9a8208a33a6fbba38);
+        
+    
+        var popup_672bf4106fe34b62a1bd8088416b261b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c9af4e0d3ca4606a7994b83a0ba2cad = $(`<div id="html_3c9af4e0d3ca4606a7994b83a0ba2cad" style="width: 100.0%; height: 100.0%;">_2021/07/06_有確診者足跡</div>`)[0];
+            popup_672bf4106fe34b62a1bd8088416b261b.setContent(html_3c9af4e0d3ca4606a7994b83a0ba2cad);
+        
+
+        marker_c6055a97835a4e5aa37eea365dfd56d1.bindPopup(popup_672bf4106fe34b62a1bd8088416b261b)
+        ;
+
+        
+    
+    
+            var marker_f06d49b3b47d4caabc53bb4ebfbd9854 = L.marker(
+                [24.144837, 120.714033],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_bbec9d46af0147b8a9075a5084c1c3cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f06d49b3b47d4caabc53bb4ebfbd9854.setIcon(icon_bbec9d46af0147b8a9075a5084c1c3cd);
+        
+    
+        var popup_3c21cd40f1784064b355d7f75ddb1d63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba0b82183c67482ea950fa9f3a3e4888 = $(`<div id="html_ba0b82183c67482ea950fa9f3a3e4888" style="width: 100.0%; height: 100.0%;">_2021/07/07_有確診者足跡</div>`)[0];
+            popup_3c21cd40f1784064b355d7f75ddb1d63.setContent(html_ba0b82183c67482ea950fa9f3a3e4888);
+        
+
+        marker_f06d49b3b47d4caabc53bb4ebfbd9854.bindPopup(popup_3c21cd40f1784064b355d7f75ddb1d63)
+        ;
+
+        
+    
+    
+            var marker_f3990f0ba5764546bb0ac7f2d5afda18 = L.marker(
+                [24.226664, 120.803284],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_3e71b3244fad4ab1ad6b36b9793e0462 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f3990f0ba5764546bb0ac7f2d5afda18.setIcon(icon_3e71b3244fad4ab1ad6b36b9793e0462);
+        
+    
+        var popup_01e9a2dc5e2e4ef18f618e37f0fba148 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3ffd8f32b4040d699d091644800abb4 = $(`<div id="html_d3ffd8f32b4040d699d091644800abb4" style="width: 100.0%; height: 100.0%;">_2021/07/07_有確診者足跡</div>`)[0];
+            popup_01e9a2dc5e2e4ef18f618e37f0fba148.setContent(html_d3ffd8f32b4040d699d091644800abb4);
+        
+
+        marker_f3990f0ba5764546bb0ac7f2d5afda18.bindPopup(popup_01e9a2dc5e2e4ef18f618e37f0fba148)
+        ;
+
+        
+    
+    
+            var marker_baeb66e808354472a705fc57333d8d4b = L.marker(
+                [24.144837, 120.714033],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_7d208ae6eddc49ef9a7a55b1a5b02f93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_baeb66e808354472a705fc57333d8d4b.setIcon(icon_7d208ae6eddc49ef9a7a55b1a5b02f93);
+        
+    
+        var popup_91119522fb114a88993982bbc27d95d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c961bef65c8448ee953d1d446babb636 = $(`<div id="html_c961bef65c8448ee953d1d446babb636" style="width: 100.0%; height: 100.0%;">_2021/07/08_有確診者足跡</div>`)[0];
+            popup_91119522fb114a88993982bbc27d95d9.setContent(html_c961bef65c8448ee953d1d446babb636);
+        
+
+        marker_baeb66e808354472a705fc57333d8d4b.bindPopup(popup_91119522fb114a88993982bbc27d95d9)
+        ;
+
+        
+    
+    
+            var marker_0c2612136a6b48c29fe4ef4d0926dea0 = L.marker(
+                [24.226664, 120.803284],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_e1eeb73edd7e44c488a899f37aa8ea61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0c2612136a6b48c29fe4ef4d0926dea0.setIcon(icon_e1eeb73edd7e44c488a899f37aa8ea61);
+        
+    
+        var popup_243f78ac7753438386a7149320ce91da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6b08dc2ebda4910bca9aa59891499da = $(`<div id="html_c6b08dc2ebda4910bca9aa59891499da" style="width: 100.0%; height: 100.0%;">_2021/07/08_有確診者足跡</div>`)[0];
+            popup_243f78ac7753438386a7149320ce91da.setContent(html_c6b08dc2ebda4910bca9aa59891499da);
+        
+
+        marker_0c2612136a6b48c29fe4ef4d0926dea0.bindPopup(popup_243f78ac7753438386a7149320ce91da)
+        ;
+
+        
+    
+    
+            var marker_a6d3a7c0a3c54357b68c3efb43dd79b5 = L.marker(
+                [24.144837, 120.714033],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_b365f59cf5de48b98349c29cbafeead0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a6d3a7c0a3c54357b68c3efb43dd79b5.setIcon(icon_b365f59cf5de48b98349c29cbafeead0);
+        
+    
+        var popup_af9bfcf4edb643f6852a175098974947 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_495d7a967cdd4f0f8146d890cb9643c5 = $(`<div id="html_495d7a967cdd4f0f8146d890cb9643c5" style="width: 100.0%; height: 100.0%;">_2021/07/09_有確診者足跡</div>`)[0];
+            popup_af9bfcf4edb643f6852a175098974947.setContent(html_495d7a967cdd4f0f8146d890cb9643c5);
+        
+
+        marker_a6d3a7c0a3c54357b68c3efb43dd79b5.bindPopup(popup_af9bfcf4edb643f6852a175098974947)
+        ;
+
+        
+    
+    
+            var marker_7adc19e8133449819e84cf834cb9235a = L.marker(
+                [24.226664, 120.803284],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_268e97f421dd477982da9db51297ef77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7adc19e8133449819e84cf834cb9235a.setIcon(icon_268e97f421dd477982da9db51297ef77);
+        
+    
+        var popup_c5da0988f78d4bbc9c4d8862697f975e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2769b2582e07479aa8fe7def8d8d2c32 = $(`<div id="html_2769b2582e07479aa8fe7def8d8d2c32" style="width: 100.0%; height: 100.0%;">_2021/07/09_有確診者足跡</div>`)[0];
+            popup_c5da0988f78d4bbc9c4d8862697f975e.setContent(html_2769b2582e07479aa8fe7def8d8d2c32);
+        
+
+        marker_7adc19e8133449819e84cf834cb9235a.bindPopup(popup_c5da0988f78d4bbc9c4d8862697f975e)
+        ;
+
+        
+    
+    
+            var marker_218eb854df844119aff3b79d53f10f20 = L.marker(
+                [24.0618058, 120.4318073],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_fa620f697e164b02bcd17e2ed6d8a34f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_218eb854df844119aff3b79d53f10f20.setIcon(icon_fa620f697e164b02bcd17e2ed6d8a34f);
+        
+    
+        var popup_763445364ee34ec0930645292e526202 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ad970bc893c4103a642a8c4f1d74aa9 = $(`<div id="html_1ad970bc893c4103a642a8c4f1d74aa9" style="width: 100.0%; height: 100.0%;">_2021/07/10_有確診者足跡</div>`)[0];
+            popup_763445364ee34ec0930645292e526202.setContent(html_1ad970bc893c4103a642a8c4f1d74aa9);
+        
+
+        marker_218eb854df844119aff3b79d53f10f20.bindPopup(popup_763445364ee34ec0930645292e526202)
+        ;
+
+        
+    
+    
+            var marker_396321772baf4852a515848911e3495a = L.marker(
+                [24.0586462, 120.431753],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_37168fb2771f4cc897bdc06918e3faa7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_396321772baf4852a515848911e3495a.setIcon(icon_37168fb2771f4cc897bdc06918e3faa7);
+        
+    
+        var popup_3e27d4923b354147a588dc4760ef7130 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2a862291bfd4b70aab4f2355d56c2c0 = $(`<div id="html_d2a862291bfd4b70aab4f2355d56c2c0" style="width: 100.0%; height: 100.0%;">_2021/07/04_有確診者足跡</div>`)[0];
+            popup_3e27d4923b354147a588dc4760ef7130.setContent(html_d2a862291bfd4b70aab4f2355d56c2c0);
+        
+
+        marker_396321772baf4852a515848911e3495a.bindPopup(popup_3e27d4923b354147a588dc4760ef7130)
+        ;
+
+        
+    
+    
+            var marker_aa721ad8814d4cdea3c3b1ab6fc3c942 = L.marker(
+                [24.050043, 120.494625],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_14173bb25f5a44e58750490b766d2d20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_aa721ad8814d4cdea3c3b1ab6fc3c942.setIcon(icon_14173bb25f5a44e58750490b766d2d20);
+        
+    
+        var popup_40519ca305724a719221f16021fe5a01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_019971791e9a4244a4c688ae5a95a1a5 = $(`<div id="html_019971791e9a4244a4c688ae5a95a1a5" style="width: 100.0%; height: 100.0%;">_2021/07/07_有確診者足跡</div>`)[0];
+            popup_40519ca305724a719221f16021fe5a01.setContent(html_019971791e9a4244a4c688ae5a95a1a5);
+        
+
+        marker_aa721ad8814d4cdea3c3b1ab6fc3c942.bindPopup(popup_40519ca305724a719221f16021fe5a01)
+        ;
+
+        
+    
+    
+            var marker_adbac0cb634543cfb25f54533d1ae3b4 = L.marker(
+                [24.121011, 120.650543],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_2de163f435e64f1aad086c6498c9d296 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_adbac0cb634543cfb25f54533d1ae3b4.setIcon(icon_2de163f435e64f1aad086c6498c9d296);
+        
+    
+        var popup_2f5bf95f486d49fdae9fb8c56d4a7916 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d565813b651e46879de910c7db17194c = $(`<div id="html_d565813b651e46879de910c7db17194c" style="width: 100.0%; height: 100.0%;">_2021/07/02_有確診者足跡</div>`)[0];
+            popup_2f5bf95f486d49fdae9fb8c56d4a7916.setContent(html_d565813b651e46879de910c7db17194c);
+        
+
+        marker_adbac0cb634543cfb25f54533d1ae3b4.bindPopup(popup_2f5bf95f486d49fdae9fb8c56d4a7916)
+        ;
+
+        
+    
+    
+            var marker_b878a54009c74065935dfdb299432313 = L.marker(
+                [24.121011, 120.650543],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_3951bc4cae074eb886eb56c70eba2bd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b878a54009c74065935dfdb299432313.setIcon(icon_3951bc4cae074eb886eb56c70eba2bd2);
+        
+    
+        var popup_114e162184964ddc83a86f49c2a1e217 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3460188914c042daa5a14f38771dc15f = $(`<div id="html_3460188914c042daa5a14f38771dc15f" style="width: 100.0%; height: 100.0%;">_2021/07/03_有確診者足跡</div>`)[0];
+            popup_114e162184964ddc83a86f49c2a1e217.setContent(html_3460188914c042daa5a14f38771dc15f);
+        
+
+        marker_b878a54009c74065935dfdb299432313.bindPopup(popup_114e162184964ddc83a86f49c2a1e217)
+        ;
+
+        
+    
+    
+            var marker_71e5655b42944786a5cd4cf7ed40e8c3 = L.marker(
+                [24.121011, 120.650543],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_93bd6f9aa852487a9e52e82c5fa6b380 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_71e5655b42944786a5cd4cf7ed40e8c3.setIcon(icon_93bd6f9aa852487a9e52e82c5fa6b380);
+        
+    
+        var popup_4dd353d55b464d07a313281a089e4a61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d20af2c8804a44f78ab861b28dd8c66a = $(`<div id="html_d20af2c8804a44f78ab861b28dd8c66a" style="width: 100.0%; height: 100.0%;">_2021/07/04_有確診者足跡</div>`)[0];
+            popup_4dd353d55b464d07a313281a089e4a61.setContent(html_d20af2c8804a44f78ab861b28dd8c66a);
+        
+
+        marker_71e5655b42944786a5cd4cf7ed40e8c3.bindPopup(popup_4dd353d55b464d07a313281a089e4a61)
+        ;
+
+        
+    
+    
+            var marker_80a5451dbc1044eabc8cf720d817cb62 = L.marker(
+                [24.121011, 120.650543],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_b7bfceb964404cf8af6fe570c4e83b3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_80a5451dbc1044eabc8cf720d817cb62.setIcon(icon_b7bfceb964404cf8af6fe570c4e83b3e);
+        
+    
+        var popup_d8e281ef216b4afe9442601857b81fdb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9cc8a0f06235433db470a36600fb01ac = $(`<div id="html_9cc8a0f06235433db470a36600fb01ac" style="width: 100.0%; height: 100.0%;">_2021/07/05_有確診者足跡</div>`)[0];
+            popup_d8e281ef216b4afe9442601857b81fdb.setContent(html_9cc8a0f06235433db470a36600fb01ac);
+        
+
+        marker_80a5451dbc1044eabc8cf720d817cb62.bindPopup(popup_d8e281ef216b4afe9442601857b81fdb)
+        ;
+
+        
+    
+    
+            var marker_27f195be42a6468d9ce051518bedd636 = L.marker(
+                [24.121011, 120.650543],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_ed4eac05fa584838ac285826cea9cf89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_27f195be42a6468d9ce051518bedd636.setIcon(icon_ed4eac05fa584838ac285826cea9cf89);
+        
+    
+        var popup_08bd75c7a658425781dc0972ecb8812d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60f6500792244c15a8f7de324081a0d6 = $(`<div id="html_60f6500792244c15a8f7de324081a0d6" style="width: 100.0%; height: 100.0%;">_2021/07/06_有確診者足跡</div>`)[0];
+            popup_08bd75c7a658425781dc0972ecb8812d.setContent(html_60f6500792244c15a8f7de324081a0d6);
+        
+
+        marker_27f195be42a6468d9ce051518bedd636.bindPopup(popup_08bd75c7a658425781dc0972ecb8812d)
+        ;
+
+        
+    
+    
+            var marker_ae36ac0f11bf4b778cf1cb5693fb8410 = L.marker(
+                [24.121011, 120.650543],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_40d7e3076eea4e18a6e4e78ef32b68f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ae36ac0f11bf4b778cf1cb5693fb8410.setIcon(icon_40d7e3076eea4e18a6e4e78ef32b68f8);
+        
+    
+        var popup_f08c13734f2647ce8bd263cc876df640 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29e9c496384f4f1095e1579a38ff7166 = $(`<div id="html_29e9c496384f4f1095e1579a38ff7166" style="width: 100.0%; height: 100.0%;">_2021/07/07_有確診者足跡</div>`)[0];
+            popup_f08c13734f2647ce8bd263cc876df640.setContent(html_29e9c496384f4f1095e1579a38ff7166);
+        
+
+        marker_ae36ac0f11bf4b778cf1cb5693fb8410.bindPopup(popup_f08c13734f2647ce8bd263cc876df640)
+        ;
+
+        
+    
+    
+            var marker_1ff10afc325541148e2827679d0cd807 = L.marker(
+                [24.121011, 120.650543],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_e7f66156ab7f4193a30a25fb2a9c98e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1ff10afc325541148e2827679d0cd807.setIcon(icon_e7f66156ab7f4193a30a25fb2a9c98e3);
+        
+    
+        var popup_31b85e6b8cf042359575bf49baee9355 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f872477cd454b5190ea02c9db840bfd = $(`<div id="html_4f872477cd454b5190ea02c9db840bfd" style="width: 100.0%; height: 100.0%;">_2021/07/08_有確診者足跡</div>`)[0];
+            popup_31b85e6b8cf042359575bf49baee9355.setContent(html_4f872477cd454b5190ea02c9db840bfd);
+        
+
+        marker_1ff10afc325541148e2827679d0cd807.bindPopup(popup_31b85e6b8cf042359575bf49baee9355)
+        ;
+
+        
+    
+    
+            var marker_296d0982a1174997b9b0fb466636104d = L.marker(
+                [24.121011, 120.650543],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_d21b1b349f7842749da74fbd59f7c596 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_296d0982a1174997b9b0fb466636104d.setIcon(icon_d21b1b349f7842749da74fbd59f7c596);
+        
+    
+        var popup_895417ea84a040e1bd55d375ffc102b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3692c71da8de43139db62fb1f6eff3ad = $(`<div id="html_3692c71da8de43139db62fb1f6eff3ad" style="width: 100.0%; height: 100.0%;">_2021/07/09_有確診者足跡</div>`)[0];
+            popup_895417ea84a040e1bd55d375ffc102b4.setContent(html_3692c71da8de43139db62fb1f6eff3ad);
+        
+
+        marker_296d0982a1174997b9b0fb466636104d.bindPopup(popup_895417ea84a040e1bd55d375ffc102b4)
+        ;
+
+        
+    
+    
+            var marker_462e9ffbf102491a9b1ff1ec2da2dfae = L.marker(
+                [24.121011, 120.650543],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_8547c5a778ce4c5cb55bb133a1092a1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_462e9ffbf102491a9b1ff1ec2da2dfae.setIcon(icon_8547c5a778ce4c5cb55bb133a1092a1d);
+        
+    
+        var popup_1ea8e24aacd449b8b3825c2b060c0ea1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_752f9ae2654d4dcf838abfaf131ee735 = $(`<div id="html_752f9ae2654d4dcf838abfaf131ee735" style="width: 100.0%; height: 100.0%;">_2021/07/10_有確診者足跡</div>`)[0];
+            popup_1ea8e24aacd449b8b3825c2b060c0ea1.setContent(html_752f9ae2654d4dcf838abfaf131ee735);
+        
+
+        marker_462e9ffbf102491a9b1ff1ec2da2dfae.bindPopup(popup_1ea8e24aacd449b8b3825c2b060c0ea1)
+        ;
+
+        
+    
+    
+            var circle_f41d0007343647d0a599e175c4d84633 = L.circle(
+                [24.144315, 120.7102],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150, "stroke": true, "weight": 3}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+        var popup_e9847349127f4d47be25a79ef0ff1d31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cb02178fa664d1b9c19faddeb764fdb = $(`<div id="html_2cb02178fa664d1b9c19faddeb764fdb" style="width: 100.0%; height: 100.0%;">_2021/07/11_有確診者足跡</div>`)[0];
+            popup_e9847349127f4d47be25a79ef0ff1d31.setContent(html_2cb02178fa664d1b9c19faddeb764fdb);
+        
+
+        circle_f41d0007343647d0a599e175c4d84633.bindPopup(popup_e9847349127f4d47be25a79ef0ff1d31)
+        ;
+
+        
+    
+    
+            var marker_01062b83e0134d8eb0e6419836038b28 = L.marker(
+                [24.144315, 120.7102],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_d440ce170c394e0e8b8b34783a596ad5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_01062b83e0134d8eb0e6419836038b28.setIcon(icon_d440ce170c394e0e8b8b34783a596ad5);
+        
+    
+        var popup_43e53be263414f258bcb6428f9988991 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80b3f1a605a04d8ab9eee9042c928bed = $(`<div id="html_80b3f1a605a04d8ab9eee9042c928bed" style="width: 100.0%; height: 100.0%;">_2021/07/11_有確診者足跡</div>`)[0];
+            popup_43e53be263414f258bcb6428f9988991.setContent(html_80b3f1a605a04d8ab9eee9042c928bed);
+        
+
+        marker_01062b83e0134d8eb0e6419836038b28.bindPopup(popup_43e53be263414f258bcb6428f9988991)
+        ;
+
+        
+    
+    
+            var marker_0bf467f2350947fca6e686fe51eeb576 = L.marker(
+                [23.925527, 120.55184],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_d5b1647cc0c34651a50af360411030d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0bf467f2350947fca6e686fe51eeb576.setIcon(icon_d5b1647cc0c34651a50af360411030d9);
+        
+    
+        var popup_c5f30f513b454f4fb6a108550916caa0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74c0b79a65ea4727b0870cfead3b780f = $(`<div id="html_74c0b79a65ea4727b0870cfead3b780f" style="width: 100.0%; height: 100.0%;">_2021/07/11_有確診者足跡</div>`)[0];
+            popup_c5f30f513b454f4fb6a108550916caa0.setContent(html_74c0b79a65ea4727b0870cfead3b780f);
+        
+
+        marker_0bf467f2350947fca6e686fe51eeb576.bindPopup(popup_c5f30f513b454f4fb6a108550916caa0)
+        ;
+
+        
+    
+    
+            var circle_681dfca2866b43fc9f0ace8176244b82 = L.circle(
+                [23.9562925, 120.5734902],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150, "stroke": true, "weight": 3}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+        var popup_8734baab526043b2a4177b78c922bd5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a51f8ed995db490d8f67369759d84e5c = $(`<div id="html_a51f8ed995db490d8f67369759d84e5c" style="width: 100.0%; height: 100.0%;">_2021/07/12_有確診者足跡</div>`)[0];
+            popup_8734baab526043b2a4177b78c922bd5b.setContent(html_a51f8ed995db490d8f67369759d84e5c);
+        
+
+        circle_681dfca2866b43fc9f0ace8176244b82.bindPopup(popup_8734baab526043b2a4177b78c922bd5b)
+        ;
+
+        
+    
+    
+            var marker_5de6c670d0854e12b954012ea12f2928 = L.marker(
+                [23.9562925, 120.5734902],
+                {}
+            ).addTo(map_dc8d955324f7478595a1dce20235ab43);
+        
+    
+            var icon_f4326f9782b0488da6b97df1bcf29357 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5de6c670d0854e12b954012ea12f2928.setIcon(icon_f4326f9782b0488da6b97df1bcf29357);
+        
+    
+        var popup_42a4923cab4940188d8afc66db9d1768 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b66bc379ea83470887925f18a46b0835 = $(`<div id="html_b66bc379ea83470887925f18a46b0835" style="width: 100.0%; height: 100.0%;">_2021/07/12_有確診者足跡</div>`)[0];
+            popup_42a4923cab4940188d8afc66db9d1768.setContent(html_b66bc379ea83470887925f18a46b0835);
+        
+
+        marker_5de6c670d0854e12b954012ea12f2928.bindPopup(popup_42a4923cab4940188d8afc66db9d1768)
+        ;
+
+        
+    
+</script>
