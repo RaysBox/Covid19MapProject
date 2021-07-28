@@ -3,7 +3,6 @@ import folium # 匯入 folium 套件
 import csv
 import datetime
 
-# 留著未來以後作為User所在地的定位參考使用
 city = {'台中市' : [24.144144, 120.679654], 
 		'南投縣' : [23.909384, 120.683914] }
 
@@ -43,12 +42,20 @@ def drawMap(data):
 				color = 'red' if delta.days <= 7 else 'orange'
 
 				# 型態為市場則畫範圍
+				# msg = '今天有確診者經過這' if delta.days == 0 else '昨天確診者有經過這' if delta.days == 1 else '前天確診者有經過這' if delta.days == 2 else str(delta.days) +'天內確診者有經過這'
 				date = "_" + date.replace("-","/") + "_";
+				# msg = '今天'+ date +'有確診者足跡' if delta.days == 0 else '昨天'+ date +'有確診者足跡' if delta.days == 1 else '前天'+ date +'有確診者足跡' if delta.days == 2 else date +'有確診者足跡'
 				msg = date +'有確診者足跡'
-				if '市場' in addr or '夜市' in addr or '商圈' in addr:
+				if '市場' in addr or '夜市' in addr or '商圈' in addr or '高鐵' in addr or '勤美誠品綠園道' in addr or '火車站' in addr or '台鐵' in addr:
+					step_range = 150
+					if '勤美誠品綠園道' in addr:
+						step_range = 220
+					if '停站' in note:
+						color = 'gray'
+
 					mapChild = folium.Circle(location=place,
                 	            color=color, # Circle 顏色
-                    	        radius=150, # Circle 寬度
+                    	        radius=step_range, # Circle 寬度
                         	    popup=msg, # 彈出視窗內容
                             	fill=True, # 填滿中間區域
                             	fill_opacity=0.3 # 設定透明度
